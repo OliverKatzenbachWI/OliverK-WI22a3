@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+  <head>
+
+      
+        <title>Urlaubsrecap Thailand</title> 
+        <meta charset="UTF-8">
+        <meta name="Startseite" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Projectcss.css" >
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" >
+        
+  </head>
+
+  
+<!-- Navbar -->
+    <body>
+        <t1> <h1> Thailand Tourism</h1></t1>
+
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand" href="#"> Homepage </a>
+          <ul class="nav nav-pills">
+
+            <!--"Burgermenu" bei kleiner Page-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">                
+                <li class="nav-item active">
+
+            <!--Kategorien der Navbar-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink1" data-toggle="dropdown">Places</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                
+                  <ul><a href="Places_Chiang_Mai.html"> Chiang Mai </a></ul>
+                  <ul><a href="Places_Chiang_Rai.html"> Chiang Rai</a></ul>
+                  <ul><a href="Places_Krabi.html"> Krabi </a></ul>
+                  <ul><a href="Places_Surat_Thani.html"> Surat Thani </a></ul>
+                  <ul><a href="Places_Bangkok.html"> Bangkok </a></ul>
+
+
+
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink2" data-toggle="dropdown">Recommended time</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                <a href="time_Regenzeit"> Regenzeit</a>
+              </div>
+              <script>
+                function OpenWeatherPage(){
+                  window.location.href = "https://www.wetter.com/thailand/ASTH.html";
+                }
+                document.getElementById("WeatherPage").addEventListener("click", OpenWeatherPage);
+              </script>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" ID="dropdownMenuLink3" data-toggle="dropdown">Checklist</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                <a href="Checklist_Health.html"> Health </a>
+                <a href="Checklist_Do´sDont´s.html	"> Do´s/Dont´s </a>
+              </div>
+            </li>
+
+          </ul>
+        </nav>
+
+
+
+    </body>
+
+
+<script>
+    window.onload = function () {
+    if (document.getElementById("Weather")) {
+    document.getElementById("Weather").onclick = weatherClick;
+  }
+  };
+
+    window.onload = function () {
+      if (document.getElementById("Calendar")) {
+        document.getElementById("Calendar").onclick = calendarClick;
+      }
+    }
+
+    </script>
+
+
+
+
+<!-- Ab hier Rest der Seite -->
+
+</html>
+
+</head>
+
+<body>
+  
+  <p>
+    <h3> Based on experience of vacation December 2023</h3>
+    <h5> Why Thailand? </h5>
+
+    <ul id="ListWhyThailand">
+      <li><a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink1" data-toggle="dropdown">Price</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+          <a class="dropdown-item" href="#"></a> Vergleichsweise mit deutschen Preisen sind Produkte und Dienstleistungen in Thailand sehr günstig.
+      </li>
+      <li><a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink1" data-toggle="dropdown">Climate</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+          <a class="dropdown-item" href="#"></a> A compared (to germany) warm wheather with a daily average of 29.5°C in Bangkok (9.8°C Berlin).
+      </li>      
+      <li><a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink1" data-toggle="dropdown">Mentality</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+          <a class="dropdown-item" href="#"></a> Locals are very easygoing and helpful.
+      </li>      
+          
+      <li><a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink1" data-toggle="dropdown">Local cuisine</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+          <a class="dropdown-item" href="#"></a> Most delicious food you´ll ever find. Eat very good food at the market for 
+          practically nothing or eat out at high end restaurants for less than what you expect to pay for a pizza in germany.
+      </li>
+      <li><a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink1" data-toggle="dropdown">Change</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+          <a class="dropdown-item" href="#"></a> 
+            <ul> Change of pace</ul>
+            <ul> Sights</ul>
+            <ul> Tours</ul>
+            <ul> Wildlife</ul>
+
+      <li><a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink1" data-toggle="dropdown">Flex</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+          <a class="dropdown-item" href="#"></a> I mean, who can say they had 30°C on christmas and hugged a tiger?
+    </ul>   
+
+    </li>
+  </p>
+  
+  
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+<footer>
+  <h4>
+    Most used Pictures are self-taken. Pictures with recognizable Persons, may not be distributed further.
+  </h4>
+</footer>
+
+</html>
